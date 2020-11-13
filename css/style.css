@@ -1,37 +1,8 @@
-/*=======================================================================
-	
-	Item Name 		|		Symp - Responsive One Page VCard/Resume Template
-	
-	Author Name		|		Noman Ali Samejo
-	
--------------------------------------------------------------------------
-	CSS Structure
--------------------------------------------------------------------------
-	
-	01- General CSS
-	02- Preloader
-	03- Front Section
-	04- About Section
-	05- Resume Section
-	06- Services Section
-	07- Blog Section
-	08- Portfolio Section
-	09- Contact Section
-	10- Work Page
-	11- Single Post Page
-	12- Responsive CSS
-	
-	*Colors are in separate files.
-	
-=======================================================================*/
 
 
-
-
-
-
-/*Importing Google Fonts */
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,700,600,300|Playfair+Display:700italic,400italic|Crimson+Text:400italic,600italic|Open+Sans:400,700);
+
+
 
 /*=======================================================================
 	General CSS
@@ -40,12 +11,12 @@
 	margin:0;
 	padding:0;
 	outline:none;
-	font-family: Open Sans, sans-serif;
+	font-family: , sans-serif;
 }
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6{
 	font-weight:bold;
-	font-family: Raleway, sans-serif;
+	font-family: Graphik, sans-serif;
 }
 ::-webkit-scrollbar{
 	height:10px;
@@ -198,26 +169,6 @@ body.section-show .section.active{
 .bg-lightgray{
 	background:#F5F5F5;
 }
-.footer{
-	padding:30px 0;
-	background:#FFF;
-	border-top:solid 1px #F0F0F0;
-}
-.footer h4{
-	font-size:18px;
-	letter-spacing:4px;
-	margin:0;
-	margin-top:3.5px;
-	font-style:italic;
-	font-family:'Playfair Display', serif;
-	color:#999;
-}
-.footer-social{
-	margin:0;
-	padding:0;
-	list-style:none;
-	font-size:0;
-}
 
 .section-block > .container,
 .section-block{
@@ -266,18 +217,20 @@ body.section-show .section.active{
 	display:none;
 }
 
+
 .divider-draft{
 	position:relative;
 	height:2px;
 	background:#333;
-	width:40px;
+	width:50px;
 	display:block;
 	margin:15px 0;
 }
+
 .divider-draft:before,
 .divider-draft:after{
 	content: ' ';
-	width:25px;
+	width:30px;
 	height:1px;
 	background:#333;
 	position:absolute;
@@ -286,6 +239,7 @@ body.section-show .section.active{
 .divider-draft.center{
 	margin:auto;
 }
+
 .divider-draft.center:before,
 .divider-draft.center:after{
 	right:0;
@@ -432,6 +386,7 @@ body.section-show .transition-mask:before{
 	transform:rotate(45deg);
 	border-radius:0;
 }
+
 .front-person-img > img{
 	max-width:100%;
 	vertical-align:bottom;
@@ -441,8 +396,6 @@ body.section-show .transition-mask:before{
 	-o-transform:rotate(-45deg) translateY(40px);
 	transform:rotate(-45deg) translateY(40px);
 }
-
-
 
 
 .front-person-links{
@@ -462,6 +415,7 @@ body.section-show .transition-mask:before{
 .front-person-links > ul > li{
 	display:block;
 }
+
 .front-person-links > ul{
 	font-size:0;
 	z-index:99;
@@ -538,7 +492,7 @@ body.section-show .transition-mask:before{
 }
 .about-icons{
 	padding-top:300px;
-	padding-bottom:0px;
+	padding-bottom:00px;
 }
 .basic-info{
 	padding-top:200px;
@@ -550,6 +504,10 @@ body.section-show .transition-mask:before{
 	margin-bottom:80px;
 }
 
+.section-header > h2 {
+	font-size: 70px;
+	font-weight: 900;
+}
 .basic-info p {
 	padding-top:100px ;
 	color: black;
@@ -600,8 +558,8 @@ body.section-show .transition-mask:before{
 	left:0;
 	right:0;
 	bottom:0;
-	background:#333;
-	background:rgba(51,51,51,.8);
+	background: #fd7206;
+	background: #fd710652;
 	color:#FFF;
 	text-align:center;
 	z-index:10;
@@ -627,29 +585,7 @@ body.section-show .transition-mask:before{
 	transform:translate(-50%, -50%);
 	width:75%;
 }
-.portfolio-items > .item > .inner > .caption > .caption-inner > h4{
-	font-size:22px;
-	margin:0;
-	margin-bottom:30px;
-	opacity:0;
-	visibility:hidden;
-	-webkit-transform:translateY(15px);
-	-moz-transform:translateY(15px);
-	-ms-transform:translateY(15px);
-	-o-transform:translateY(15px);
-	transform:translateY(15px);
-	-webkit-transition:all .3s .1s ease;
-	-moz-transition:all .3s .1s ease;
-	transition:all .3s .1s ease;
-}
-.portfolio-items > .item > .inner:hover > .caption > .caption-inner > h4{
-	-webkit-transform:translateY(0);
-	-moz-transform:translateY(0);
-	-ms-transform:translateY(0);
-	-o-transform:translateY(0);
-	transform:translateY(0);
-	opacity:1;
-	visibility:visible;
+
 }
 .portfolio-items > .item > .inner > .caption > .caption-inner > .links{
 	list-style:none;
@@ -755,15 +691,17 @@ body.section-show .transition-mask:before{
 }
 #portfolio-filters > ul > li > a{
 	display:block;
-	color:#999;
+	color: black;
 	text-decoration:none;
 }
 #portfolio-filters > ul > li > a:hover,
 #portfolio-filters > ul > li > a.active{
-	color:#333;
 }
 #portfolio-filters > ul > li > a.active{
-	text-decoration:line-through;
+	text-decoration:underline;
+	font-size: larger;
+	font-weight: 900;
+	color: #0fd1c5;
 }
 
 /*=======================================================================
