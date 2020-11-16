@@ -517,8 +517,6 @@ body.section-show .transition-mask:before{
 	color: black;
 }
 
-
-
 /*=======================================================================
 	About Section
 =======================================================================*/
@@ -704,6 +702,7 @@ span {
 	border:solid 1px #E5E5E5;
 	transform:rotate(45deg);
 }
+
 #portfolio-filters > ul > li > a{
 	display:block;
 	color: black;
